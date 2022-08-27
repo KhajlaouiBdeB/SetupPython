@@ -13,4 +13,4 @@ if os.path.exists(dir_path):
 
 print('Install ' + package)
 sys.stdout.flush() # always flush stream before subprocess call
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', package, '--target', 'Scikit'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
