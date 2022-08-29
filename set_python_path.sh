@@ -22,7 +22,7 @@ while getopts 'p' flag; do
 done
 
 NEW_PATH=$PYTHON_PATH:$PIP_PATH:$PATH
-export PATH=$NEW_PATH
+export PYTHON_PATH=$NEW_PATH
 
 if [ -n "$ACTION" ]; then
   case $ACTION in
